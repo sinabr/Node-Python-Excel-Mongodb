@@ -1,0 +1,30 @@
+{
+  "name": "node-python-excel",
+  "version": "1.0.0",
+  "description": "node js excel handling using python shell",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinabr/Node-Python-Excel-Mongodb.git"
+  },
+  "keywords": [
+    "Express",
+    "Python",
+    "NodeJs",
+    "Mongodb"
+  ],
+  "author": "Sina Barazandeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sinabr/Node-Python-Excel-Mongodb/issues"
+  },
+  "homepage": "https://github.com/sinabr/Node-Python-Excel-Mongodb#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
