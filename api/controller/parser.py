@@ -24,5 +24,6 @@ del jsonfile
 del worksheet 
 del workbook 
 print('done')
-gc.collect()    
-os.remove(sys.argv[1])
+gc.collect()
+# we might want to remove the xlsx file after the conversion    
+#os.remove(sys.argv[1])

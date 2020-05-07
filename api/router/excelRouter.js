@@ -8,7 +8,7 @@ const Authenticate = require('../middleware/authentication')
 
 upath = path.join(__dirname, '..', '..', '/uploads') 
 
-var ExcelController = require('../controlller/excelController')
+var ExcelController = require('../controller/excelController')
 
 router.get('/excels' ,formidableMiddleware({keepExtensions:true,uploadDir:upath}) , ExcelController.excel_handle)
 

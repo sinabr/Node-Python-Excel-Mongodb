@@ -15,7 +15,7 @@ exports.excel_handle = (req , res , next)=>{
 
     console.log("Waiting ...")
     // python file to parse Excel xlsx to json keeping the (Key,Value) untouched
-    var shell = new ps.PythonShell('/home/ghasedak/Project/api/controller/parser.py',{args:[file],mode:'text'})
+    var shell = new ps.PythonShell('./api/controller/parser.py',{args:[file],mode:'text'})
     shell.on('message', function(data) { 
         if(data == "done"){
             var jsonArray = JSON.parse(fs.readFileSync(filename))
@@ -23,9 +23,9 @@ exports.excel_handle = (req , res , next)=>{
                 var car = new Car({
                     _id:mongoose.Types.ObjectId,
                     name:item.name,
-                    productionYear:item.productionYear,
-                    engineSize:item.engineSize,
-                    horsePower:item.horsePower
+                    productionYear:item[' Production Year'],
+                    engineSize:item['Engine Size'],
+                    horsePower:item['Horse Power (HP)']
                 })
                 // you can add better error handling by using a logger or simply pm2 module to log your errors
                 car.save()
