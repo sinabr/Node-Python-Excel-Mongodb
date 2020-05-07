@@ -4,13 +4,9 @@ const morgan = require('morgan');
 const bodyparser = require('body-parser')
 const mongoose = require('mongoose');
 const helmet = require('helmet');
-const compression = require('compression');
 const rateLimit = require('express-rate-limit');
 const mongoSanitize = require('express-mongo-sanitize');
-const debug = require('debug')('http');
-const path = require('path')
-const fs = require('fs')
-const rfs = require('rotating-file-stream')
+
 const cors = require('cors');
 
 mongoose.set('useCreateIndex', true);
