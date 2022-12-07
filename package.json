@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/sinabr/Node-Python-Excel-Mongodb#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-formidable": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "python-shell": "^2.0.0"
